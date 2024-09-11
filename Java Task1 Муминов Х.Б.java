@@ -7,9 +7,9 @@ class Task1
     {
         Scanner in = new Scanner(System.in);
         System.out.print("Input a: ");
-        int a = in.nextInt();
+        float a = in.nextInt();
         System.out.print("Input b: ");
-        int b = in.nextInt();
+        float b = in.nextInt();
 
         if(a < b)
             System.out.println(" a < b \n");
@@ -18,15 +18,25 @@ class Task1
         if(a == b)
             System.out.println("a = b \n");
 
-        int c = a + b;
-        int d = a - b;
-        int e = a * b;
-        int f = a / b;
-
+        float c = a + b;
         System.out.println("a + b = " + c);
+
+        float d = a - b;
         System.out.println("a - b = " + d);
+
+        float e = a * b;
         System.out.println("a * b = " + e);
-        System.out.println("a / b = " + f + "\n");
+
+        float f = 0;
+        if(b != 0)
+        {
+            f = a / b;
+            System.out.println("a / b = " + f + "\n");
+        }
+        else 
+        {
+            System.out.println("Сan't divide by zero \n");
+        }
         
     }
 }
