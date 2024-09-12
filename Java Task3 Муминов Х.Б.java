@@ -12,5 +12,6 @@ class Main
             if(array1[i] % 2 == 0)
                 System.out.print(array1[i] + " ");
 
+        
     }
 }
